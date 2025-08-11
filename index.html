@@ -3,15 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <title>rps-game</title>
+        <link rel="stylesheet" href="style.css"></link>
         <script type="module" src="script.js"></script>
     </head>
     <body>
-        <div>
-            <h1>Play on the console!!</h1>
-            <img src="rps-game.jpeg" alt="hands showing how to play the games" />
+        <div class="rps">
+            <h1>Rock Paper Scissors</h1>
+            <img class="image" src="rps-game.jpeg" alt="hands showing how to play the games" />
+            <div class="buttons">
+                <button data-choice="rock">✊ Rock</button>
+                <button data-choice="paper">✋ Paper</button>
+                <button data-choice="scissors">✌ Scissors</button>
+            </div>
+            <div class="score">
+                <p>Player Score: <span id="player-score">0</span></p>
+                <p>Computer Score: <span id="computer-score">0</span></p>
+            </div>
+            <div class="results" id="results"></div>
         </div>
-        <div><button>Play game - CTRL+SHIFT+I</button></div>
-
 
     </body>
 </html>
